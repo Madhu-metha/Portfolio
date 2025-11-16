@@ -24,7 +24,7 @@ export default function Header() {
                             {i.label}
                         </Link>
                     ))}
-                    <a href="/resume.pdf" download className="px-3 py-2 rounded-md bg-brand-500 text-white hover:bg-brand-600">
+                    <a href="/MADHUMETHA_B_I_Resume.pdf" download className="px-3 py-2 rounded-md bg-brand-500 text-white hover:bg-brand-600">
                         Download Resume
                     </a>
                     <ThemeToggle />
@@ -50,7 +50,7 @@ export default function Header() {
                                 {i.label}
                             </Link>
                         ))}
-                        <a href="/resume.pdf" download className="px-3 py-2 rounded-md bg-brand-500 text-white text-center">
+                        <a href="/MADHUMETHA_B_I_Resume.pdf" download className="px-3 py-2 rounded-md bg-brand-500 text-white text-center">
                             Download Resume
                         </a>
                     </nav>
