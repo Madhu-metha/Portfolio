@@ -1,35 +1,3 @@
-// import React, { useState } from 'react';
-// import { motion } from 'framer-motion';
-
-// const Contact: React.FC = () => {
-//     const [name, setName] = useState('');
-//     const [email, setEmail] = useState('');
-//     const [msg, setMsg] = useState('');
-
-//     const submit = (e: React.FormEvent) => {
-//         e.preventDefault();
-//         // Hook into your backend or use EmailJS / Formspree
-//         alert('Thanks — I will get back to you soon!');
-//         setName(''); setEmail(''); setMsg('');
-//     };
-
-//     return (
-//         <section id="contact" className="py-20">
-//             <div className="container mx-auto px-6 max-w-xl">
-//                 <motion.h2 initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} className="text-3xl font-bold mb-4">Get in touch</motion.h2>
-//                 <motion.form onSubmit={submit} className="grid gap-4" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}>
-//                     <input value={name} onChange={(e) => setName(e.target.value)} required placeholder="Name" className="p-3 rounded-md bg-white dark:bg-[#061423] border" />
-//                     <input value={email} onChange={(e) => setEmail(e.target.value)} required placeholder="Email" type="email" className="p-3 rounded-md bg-white dark:bg-[#061423] border" />
-//                     <textarea value={msg} onChange={(e) => setMsg(e.target.value)} required placeholder="Message" rows={6} className="p-3 rounded-md bg-white dark:bg-[#061423] border" />
-//                     <motion.button whileHover={{ scale: 1.02 }} className="px-5 py-3 rounded-md bg-sky-600 text-white">Send message</motion.button>
-//                 </motion.form>
-//             </div>
-//         </section>
-//     );
-// };
-
-// export default Contact;
-
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 

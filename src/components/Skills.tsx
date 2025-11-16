@@ -1,21 +1,32 @@
 import { motion } from "framer-motion";
-import { SiReact, SiNextdotjs, SiTypescript, SiMui, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiRedux, SiGit, SiGithub, SiPostman, SiVercel, SiRender, SiMysql,} from "react-icons/si";
+import {
+    SiReact,
+    SiNextdotjs,
+    SiTypescript,
+    SiMui,
+    SiJavascript,
+    SiHtml5,
+    SiCss3,
+    SiTailwindcss,
+    SiNodedotjs,
+    SiExpress,
+    SiMongodb,
+    SiRedux,
+    SiGit,
+    SiGithub,
+    SiPostman,
+    SiVercel,
+    SiRender,
+    SiMysql,
+} from "react-icons/si";
 import { FiCpu } from "react-icons/fi";
 
 export default function Skills() {
-    // Float animation
-    const floatTransition = {
-        repeat: Infinity,
-        repeatType: "reverse",
-        duration: 2,
-        ease: "easeInOut",
-    };
 
-    // Card lift + glow animation 
+    // Hover glow for cards 
     const cardHover = {
-        scale: 1.04,
-        boxShadow: "0px 0px 18px rgba(150, 80, 255, 0.4)",
-        borderColor: "rgba(168, 85, 247, 0.8)",
+        scale: 1.03,
+        transition: { duration: 0.25 },
     };
 
     const categories = [
@@ -89,7 +100,7 @@ export default function Skills() {
                         <motion.div
                             key={index}
                             whileHover={cardHover}
-                            className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl p-6 shadow-lg transition-all text-left"
+                            className="bg-white/10 border border-white/20 backdrop-blur-xl rounded-2xl p-6 shadow-lg transition-all hover:shadow-purple-500/30 hover:border-purple-500/40 text-left"
                         >
                             <h3 className="text-xl font-bold text-white mb-4">
                                 {category.title}
@@ -99,9 +110,14 @@ export default function Skills() {
                                 {category.skills.map((skill, i) => (
                                     <motion.div
                                         key={i}
-                                        animate={{ y: [0, -6, 0] }}
-                                        transition={floatTransition}
-                                        className="flex items-center gap-2 text-sm font-medium text-slate-200 bg-white/10 px-3 py-2 rounded-lg border border-white/10 hover:bg-white/20 hover:scale-[1.05] transition-all"
+                                        animate={{ y: [0, -8, 0] }}
+                                        transition={{
+                                            duration: 2,
+                                            repeat: Infinity,
+                                            repeatType: "reverse",
+                                            ease: "easeInOut",
+                                        }}
+                                        className="flex items-center gap-2 text-sm font-medium text-slate-200 bg-white/10 px-3 py-2 rounded-lg border border-white/10 hover:bg-white/20 hover:scale-[1.05] transition-all shadow-sm hover:shadow-purple-500/20"
                                     >
                                         <span className="text-lg">{skill.icon}</span>
                                         {skill.name}
@@ -111,7 +127,7 @@ export default function Skills() {
                         </motion.div>
                     ))}
                 </div>
-            </div>
-        </section>
+            </div >
+        </section >
     );
 }
