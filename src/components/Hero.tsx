@@ -20,7 +20,7 @@ export default function Hero() {
     return (
         <section id="home" className="pt-28 md:pt-32 pb-20 bg-gradient-to-br from-[#020617] via-[#0b1231] to-[#111827]">
             <div className="container mx-auto px-6">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center px-4 text-center lg:text-left">
 
                     {/* LEFT CONTENT */}
                     <div className="text-center lg:text-left">
@@ -66,7 +66,7 @@ export default function Hero() {
                         {/* CTA BUTTONS */}
                         <div className="mt-6 flex items-center justify-center lg:justify-start gap-4">
                             <a
-                                href="/Madhumetha_B_I_Resume.pdf"
+                                href="/MADHUMETHA_B_I_Resume.pdf"
                                 download
                                 className="group flex items-center gap-2 px-8 py-3 rounded-lg font-medium text-white bg-gradient-to-r from-blue-500 to-purple-500 hover:scale-[1.03] hover:shadow-xl hover:shadow-purple-500/40 transition-all duration-300"
                             >

@@ -1,25 +1,11 @@
 import { motion } from "framer-motion";
 import {
-    SiReact,
-    SiNextdotjs,
-    SiTypescript,
-    SiMui,
-    SiJavascript,
-    SiHtml5,
-    SiCss3,
-    SiTailwindcss,
-    SiNodedotjs,
-    SiExpress,
-    SiMongodb,
-    SiRedux,
-    SiGit,
-    SiGithub,
-    SiPostman,
-    SiVercel,
-    SiRender,
-    SiMysql,
+    SiReact, SiNextdotjs, SiTypescript, SiMui, SiJavascript, SiHtml5, SiCss3, SiTailwindcss, SiNodedotjs, SiExpress, SiMongodb, SiRedux, SiGit, SiGithub, SiPostman, SiVercel, SiRender, SiMysql,
+    SiN8N, SiPython, SiPowers
 } from "react-icons/si";
 import { FiCpu } from "react-icons/fi";
+import { FaJava } from "react-icons/fa";
+import { GiArtificialIntelligence } from "react-icons/gi";
 
 export default function Skills() {
 
@@ -36,7 +22,7 @@ export default function Skills() {
                 { name: "React.js", icon: <SiReact color="#61DBFB" /> },
                 { name: "Next.js", icon: <SiNextdotjs color="white" /> },
                 { name: "TypeScript", icon: <SiTypescript color="#3178C6" /> },
-                { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+                { name: "JavaScript (ES6+)", icon: <SiJavascript color="#F7DF1E" /> },
                 { name: "HTML5", icon: <SiHtml5 color="#E34F26" /> },
                 { name: "CSS3", icon: <SiCss3 color="#1572B6" /> },
                 { name: "Tailwind CSS", icon: <SiTailwindcss color="#38BDF8" /> },
@@ -49,13 +35,15 @@ export default function Skills() {
                 { name: "Node.js", icon: <SiNodedotjs color="#8CC84B" /> },
                 { name: "Express.js", icon: <SiExpress color="white" /> },
                 { name: "REST APIs", icon: "🌐" },
-                { name: "Microservices", icon: "🧩" },
                 { name: "Axios", icon: "⚡" },
+                { name: "Microservices", icon: "🧩" },
                 { name: "Middleware", icon: "🧵" },
+                { name: "Java", icon: <FaJava color="#007396" /> },
+                { name: "n8n Automation", icon: <SiN8N color="#FF3E2D" /> },
             ],
         },
         {
-            title: "State & Data",
+            title: "State & DataBase",
             skills: [
                 { name: "Redux", icon: <SiRedux color="#764ABC" /> },
                 { name: "React Query", icon: "🔍" },
@@ -65,7 +53,7 @@ export default function Skills() {
             ],
         },
         {
-            title: "Tools & DevOps",
+            title: "Tools & Platforms",
             skills: [
                 { name: "Git", icon: <SiGit color="#F05033" /> },
                 { name: "GitHub", icon: <SiGithub color="white" /> },
@@ -78,9 +66,18 @@ export default function Skills() {
         {
             title: "CS Fundamentals",
             skills: [
-                { name: "OOP", icon: "📘" },
+                { name: "OOPs", icon: "📘" },
                 { name: "MVC", icon: "🏛️" },
                 { name: "System Design", icon: "🧠" },
+            ],
+        },
+        {
+            title: "AI & Data Science",
+            skills: [
+                { name: "Artificial Intelligence", icon: <GiArtificialIntelligence color="#A855F7" /> },
+                { name: "Machine Learning", icon: <GiArtificialIntelligence color="#EAB308" /> },
+                { name: "Python", icon: <SiPython color="#3776AB" /> },
+                { name: "Power BI", icon: <SiPowers color="#F2C811" /> },
             ],
         },
     ];

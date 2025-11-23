@@ -43,14 +43,14 @@ export default function About() {
     return (
         <section
             id="about"
-            className="py-20 bg-gradient-to-br from-[#0b1220]/90 via-[#0a132e]/80 to-[#050b16]/90"
+            className="py-20 bg-gradient-to-br from-[#0b1220] via-[#0a132e] to-[#050b16] overflow-hidden"
         >
             <motion.div
                 ref={ref}
                 variants={sectionVariants}
                 initial="hidden"
                 animate={inView ? "show" : "hidden"}
-                className="container mx-auto px-6 text-center"
+                className="container mx-auto px-4 sm:px-6 text-center"
             >
                 {/* Title */}
                 <motion.h2
@@ -69,7 +69,7 @@ export default function About() {
                 {/* Subtitle */}
                 <motion.p
                     variants={item}
-                    className="text-slate-300 text-sm md:text-base font-semibold mb-12"
+                    className="text-slate-300 text-sm md:text-base font-semibold mb-12 max-w-2xl mx-auto"
                 >
                     Full Stack Developer <span className="text-purple-400">|</span>{" "}
                     Creative Tech Mind <span className="text-purple-400">|</span>{" "}
@@ -77,7 +77,7 @@ export default function About() {
                 </motion.p>
 
                 {/* Flip Cards */}
-                <div className="grid md:grid-cols-2 gap-8 md:gap-10 mb-16 [perspective:1000px]">
+                <div className="grid md:grid-cols-2 gap-6 md:gap-10 mb-16 [perspective:1000px] max-w-5xl mx-auto">
 
                     {/* What I Do */}
                     <motion.div
@@ -86,7 +86,7 @@ export default function About() {
                         animate={inView ? "show" : "hidden"}
                         whileHover="hover"
                         style={{ transformStyle: "preserve-3d" }}
-                        className="text-left bg-white/10 backdrop-blur-xl p-6 md:p-7 rounded-2xl border border-white/10 shadow-lghover:shadow-purple-500/25 transition-shadow"
+                        className="text-left bg-white/10 backdrop-blur-xl p-6 md:p-7 rounded-2xl border border-white/10 shadow-lg hover:shadow-purple-500/25 transition-shadow"
                     >
                         <div className="flex items-center gap-3 mb-3">
                             <FiCode className="text-purple-400 text-2xl" />
@@ -109,7 +109,7 @@ export default function About() {
                         animate={inView ? "show" : "hidden"}
                         whileHover="hover"
                         style={{ transformStyle: "preserve-3d" }}
-                        className="text-left bg-white/10 backdrop-blur-xl p-6 md:p-7 rounded-2xl border border-white/10 shadow-lghover:shadow-purple-500/25 transition-shadow"
+                        className="text-left bg-white/10 backdrop-blur-xl p-6 md:p-7 rounded-2xl border border-white/10 shadow-lg hover:shadow-purple-500/25 transition-shadow"
                     >
                         <div className="flex items-center gap-3 mb-3">
                             <FiTarget className="text-purple-400 text-2xl" />
@@ -150,12 +150,12 @@ export default function About() {
                     {/* College */}
                     <div className="flex items-center gap-4 md:gap-5 mb-5 group">
                         <div
-                            className="w-10 h-10 rounded-full bg-white/30 backdrop-blur-md ring-1 ring-white/40 shadow-md flex items-center justify-center overflow-hiddengroup-hover:shadow-purple-500/30 transition-shadow"
+                            className="w-10 h-10 rounded-full bg-white/30 backdrop-blur-md ring-1 ring-white/40 shadow-md flex items-center justify-center overflow-hidden group-hover:shadow-purple-500/30 transition-shadow"
                         >
                             <img
                                 src="/Ifet.jpeg"
                                 alt="IFET College Logo"
-                                className="w-9 h-9 rounded-full object-contain"
+                                className="w-9 h-9 rounded-full ring-1 ring-white/40 object-contain"
                             />
                         </div>
                         <div>
@@ -176,7 +176,7 @@ export default function About() {
                             <img
                                 src="/sch.jpeg"
                                 alt="School Logo"
-                                className="w-9 h-9 rounded-full object-contain"
+                                className="w-9 h-9 rounded-full ring-1 ring-white/40 object-contain"
                             />
                         </div>
                         <div>
